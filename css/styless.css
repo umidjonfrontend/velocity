@@ -1,0 +1,52 @@
+:root{
+  --blue-color:#0082f3;
+  --white-color: #fff;
+  --green-color: #676770;
+  --servises-bg: #192024;
+  --servises-text-color: #e8e8e8;
+  --button-bg: #2e80b6;
+  --button2-bg:#92a0ad;
+  --black-color: #000;
+  --footer-bg: #383838;
+  --line-height: 1.8;
+  --text-color: #6a859c;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/OpenSansCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSansCondensed-Regular.woff ') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+  height: 100%;
+  box-sizing:border-box ;
+  scroll-behavior: smooth;
+}
+*,
+ *::before,
+ *::after{
+  box-sizing: inherit;
+}
+*:focus{
+  outline: 2px dotted #ff7500;
+  outline-offset: 3px;
+}
+.body{
+  font-family:'Open sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(--line-height);
+  color: var(--text-color);
+}
+.container{
+  max-width: 980px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
