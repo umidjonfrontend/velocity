@@ -1,7 +1,7 @@
 :root{
   --blue-color:#0082f3;
   --white-color: #fff;
-  --green-color: #676770;
+  --gray-color: #676770;
   --servises-bg: #192024;
   --servises-text-color: #e8e8e8;
   --button-bg: #2e80b6;
@@ -32,7 +32,7 @@ html{
   box-sizing: inherit;
 }
 *:focus{
-  outline: 2px dotted #ff7500;
+  outline: 2px dotted var(--blue-color);
   outline-offset: 3px;
 }
 .body{
@@ -49,4 +49,69 @@ html{
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+.ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.a{
+  text-decoration: none;
+}
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* SITE HEADER */
+.site-header{
+  padding-top: 11px;
+  padding-bottom: 24px;
+}
+.site-header__container{
+  display:flex;
+  align-items:center ;
+  justify-content: space-between;
+}
+.site-logo{
+    width: 144px;
+    height:25px ;
+    transition: opacity 0.4s ease;
+}
+.site-logo:hover{
+  opacity: 0.8;
+}
+.site-logo:active{
+  opacity: 0.6;
+}
+
+.sitenav__list{
+display: flex;
+}
+.sitenav__item:not(:last-child){
+margin-right: 40px;
+}
+
+.sitenav__link{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.3;
+  color: var(--gray-color);
+  transition: all 0.4 ease;
+}
+.sitenav__link:hover{
+  color: var(--blue-color);
+}
+.sitenav__link:active{
+  opacity: 0.6;
+}
+.sitenav__link-active{
+  color: var(--blue-color);
 }
